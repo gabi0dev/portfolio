@@ -1,0 +1,172 @@
+.projekt {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+.inline-intro {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.inline-intro h1 {
+    font-family: "satoshi-medium";
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.inline-intro p {
+    font-family: "satoshi";
+    font-weight: 150;
+    font-size: 16px;
+}
+
+
+
+
+
+
+.projekt-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 300px));
+    gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+
+
+@media (max-width: 1024px) {
+  .projekt-grid {
+    grid-template-columns: repeat(2, minmax(0, 300px));
+  }
+}
+
+@media (max-width: 640px) {
+  .projekt-grid {
+    grid-template-columns: minmax(0, 300px);
+  }
+}
+
+
+
+
+
+
+.projekt-card {
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  justify-self: center;
+  flex-direction: column;
+}
+
+
+.projekt-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+
+}
+
+.projekt-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.projekt-content h3 {
+    font-family: "satoshi-medium";
+    font-weight: 400;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+
+.projekt-content p {
+    font-family: "satoshi";
+    font-size: 14px;
+    font-weight: 150;
+    margin-top: 8px;
+}
+
+
+.projekt-tags {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.projekt-tags span {
+    font-family: "satoshi";
+    font-weight: 150;
+    font-size: 12px;
+    background-color: rgba(248, 248, 248, 1);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.projekt-actions {
+
+    padding:  20px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+
+}
+
+
+.projekt-actions .d{
+  flex: 1;                     
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 9px 9px;
+  border-radius: 12px;
+  text-decoration: none;
+
+  font-family: "satoshi";
+  font-size: 14px;
+  font-weight: 150;
+
+
+}
+
+.projekt-actions .d img{
+  display: block;
+}
+
+.projekt-actions .code-outline{
+  background: transparent;
+  border: 1px solid #ddd;
+  color: #111;
+}
+
+
+.projekt-actions .demo-fill{
+  background: #0b0b14; 
+  border: 1px solid #0b0b14;
+  color: #fff;
+}
+
+
+.projekt-actions a:hover {
+    transform: translateY(-2px);
+}

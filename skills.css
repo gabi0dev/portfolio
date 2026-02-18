@@ -1,0 +1,166 @@
+.skills {
+    background-color: rgba(248, 248, 248, 1);
+    padding-top: 50px;
+    padding-bottom: 55px;
+
+}
+
+
+.inline-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.inline-skills  {
+    text-align: center;
+
+
+}
+
+.inline-header h2 {
+    font-family: "satoshi-medium";
+    font-weight: 300;
+    font-size: 24px;
+
+}
+
+.inline-header span {
+    font-family: "satoshi-medium";
+    font-weight: 300;
+    font-size: 16px;
+}
+.inline-skills p {
+    font-family: "satoshi";
+    font-weight: 150;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 8px 0 0;
+
+}
+
+
+
+.skills-tab{
+  display: flex;    
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  padding: 4px;             
+  background: #f1f1f4;      
+  border-radius: 999px;
+  max-width: fit-content;
+  margin: 30px auto 0;  
+}
+
+@media (max-width: 640px) {
+
+  .skills-tab {
+    gap: 8px;             
+    padding: 3px;       
+  }
+
+  .skills-tab button {
+    padding: 6px 14px;   
+    font-size: 12px;    
+  }
+
+}
+
+
+.skills-tab button{
+  border: 0;   
+  padding: 10px 28px;
+  border-radius: 999px;
+  font-family: "satoshi";
+  font-size: 14px;
+  font-weight: 150;
+  color: #111;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+.skills-tab button.active {
+    background: white;
+    color: #111;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);    
+}
+
+.skills-tab button {
+  transition: all 0.2s ease;
+}
+
+
+
+
+
+.skill-bars {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    gap: 40px 100px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.skill-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+  font-family: "satoshi";
+  font-size: 14px;
+}
+
+.bar{
+  height: 6px;
+  background: #d9d9d9;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar .fill{
+  display: block;
+  height: 100%;
+  background: #000000;   
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+
+@media (max-width: 768px) {
+  .skill-bars {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+.inline-footer {
+    margin-top: 100px;
+}
+
+
+
+.inline-footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; 
+}
+
+.inline-footer span {
+    display: inline-block;
+    font-family: "satoshi";
+    font-size: 14px;
+    background-color: #f1f1f4;
+    border-radius: 999px;
+    padding: 8px 15px;
+
+}

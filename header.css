@@ -1,0 +1,119 @@
+
+.inline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+
+.wrapper {
+  padding-top: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+
+}
+
+.navigation {
+  font-family: "satoshi-medium";
+  font-weight: 400;
+  display: flex;
+  gap: 12px;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+
+.logo p {
+  font-family: "satoshi-medium";
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 1px;
+  
+}
+
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+
+
+}
+
+
+.nav-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+.nav-toggle img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.nav-toggle:hover {
+  background: rgba(0,0,0,0.05);
+}
+.site-header {
+  position: relative;
+}
+
+
+@media (max-width: 768px) {
+
+  .nav-toggle {
+    display: block;
+  }
+
+
+  .navigation {
+    display: none;
+
+
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 20px;                
+    width: min(260px, 92vw);
+    padding: 12px;
+
+    background: white;
+    border: 1px solid #e6e6e6;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    flex-direction: column;
+    gap: 10px;
+    z-index: 999;
+  }
+
+  .navigation.is-open {
+    display: flex;
+  }
+
+
+  .navigation a {
+    padding: 8px 10px;
+    border-radius: 10px;
+  }
+
+  .navigation a:hover {
+    background: rgba(0,0,0,0.04);
+  }
+}
