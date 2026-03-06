@@ -1,19 +1,19 @@
 const skillData = {
   frontend: [
-    { name: "HTML / CSS", percent: 90 },
-    { name: "JavaScript", percent: 80 },
-    { name: "React", percent: 75 },
-    { name: "Tailwind CSS", percent: 85 },
+    { name: "HTML / CSS", percent: 75 },
+    { name: "JavaScript", percent: 40 },
+    { name: "React", percent: 10 },
+    { name: "Tailwind CSS", percent: 10 },
   ],
   backend: [
-    { name: "Python", percent: 80 },
-    { name: "SQL", percent: 70 },
-    { name: "PostgreSQL", percent: 65 },
-    { name: "REST APIs", percent: 70 },
+    { name: "Python", percent: 20 },
+    { name: "SQL", percent: 30 },
+    { name: "Java", percent: 25 },
+    { name: "REST APIs", percent: 10 },
   ],
   devops: [
     { name: "Linux", percent: 70 },
-    { name: "Docker", percent: 55 },
+    { name: "Docker", percent: 10 },
     { name: "Postfix", percent: 60 },
     { name: "Bash", percent: 65 },
   ]
@@ -51,5 +51,6 @@ tabButtons.forEach(btn => {
 });
 
 renderSkills("frontend");
+
 
 
